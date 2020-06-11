@@ -13,8 +13,12 @@ private:
     int rowNumber;
     int columNumber;
     vector<vector<T>> mat;
+public:
+    int getRowNumber();
+    int getColumNumber();
 
 
 };
+
 
 #endif //FINAL_PRO_MATRIX_H
