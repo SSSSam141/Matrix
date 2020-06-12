@@ -13,11 +13,27 @@ private:
     int rowNumber;
     int columNumber;
     vector<vector<T>> mat;
+    bool sparse;
 public:
+    //basic function
     int getRowNumber();
     int getColumNumber();
 
+    //basic arithmetic reduction operations
+    T getAllMax();
+    T getAllAve();
+    T getAllMin();
+    T getAllSum();
 
+    T getMaxByCol(int colNum);
+    T getAveByCol(int colNum);
+    T getMinByCol(int colNum);
+    T getSumByCol(int colNum);
+
+    T getMaxByRow(int rowNum);
+    T getAveByRow(int rowNum);
+    T getMinByRow(int rowNum);
+    T getSumByRow(int rowNum);
 };
 
 

@@ -6,7 +6,7 @@ set(OpenCV_DIR "C:/Users/XiShao/Downloads/opencv/build")#改为mingw-bulid的位
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
-add_executable(final_pro main.cpp Matrix.h Matrix.cpp)#当前项目名称和cpp的名称
+add_executable(final_pro main.cpp Matrix.h Matrix.cpp Ari_reduction.cpp)#当前项目名称和cpp的名称
 # add libs you need
 set(OpenCV_LIBS opencv_core opencv_imgproc opencv_highgui opencv_imgcodecs)
 # linking
